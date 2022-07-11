@@ -1,0 +1,246 @@
+
+**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "C:\Cadence\SPB_16.5\tools\pspice\library\eval.lib" 
+.lib "C:\Cadence\SPB_16.5\tools\pspice\library\CMOS35.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.3 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source COMP
+M_M1         N00317 N00321 0 0 MODN W=0.4u L=1u M=1
+M_M2         N00291 N00321 N00317 N00291 MODP W=1.2u L=1u M=1
+M_M4         N00291 N00754 N00321 N00291 MODP W=0.4u L=1u M=1
+M_M3         N00321 N00626 0 0 MODN W=0.4u L=1u M=1
+V_V1         N00291 0 3.3
+V_V2         N00626 0 1
+V_V3         N00754 0  AC 1
++SIN 0 3.3 10 0 0 0
+
+**** RESUMING trans.cir ****
+.END
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model MODN: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model MODN: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M3, model MODN: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M3, model MODN: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model MODP: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model MODP: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Ps = 0 is less than W
+
+INFO(ORPSIM-15454): Model MODN: Using BSIM VERSION 3.1 or lower
+
+INFO(ORPSIM-15454): Model MODP: Using BSIM VERSION 3.1 or lower
+
+**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MODN            MODP            
+               NMOS            PMOS            
+       LEVEL    7               7            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO     .4979          -.6915       
+          KP  273.516300E-06  267.202200E-06 
+       GAMMA    0               0            
+      LAMBDA    0               0            
+         RSH   70             129            
+          IS    0               0            
+          JS   10.000000E-06   90.000000E-06 
+          PB     .69            1.02         
+        PBSW     .69            1.02         
+          CJ  940.000000E-06    1.360000E-03 
+        CJSW  250.000000E-12  320.000000E-12 
+          MJ     .34             .56         
+        MJSW     .23             .43         
+        CGSO  120.000000E-12   86.000000E-12 
+        CGDO  120.000000E-12   86.000000E-12 
+        CGBO  110.000000E-12  110.000000E-12 
+         TOX    7.575000E-09    7.754000E-09 
+          XJ  300.000000E-09  300.000000E-09 
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA     .01442          .01         
+          KF    5.100000E-27    8.500000E-27 
+          AF    1.36            1.48         
+      DIOMOD    2               2            
+          K1     .50296          .59959      
+          K2     .033985        -.06038      
+        LETA    0               0            
+        WETA    0               0            
+          U0  475.8           148.2          
+       XPART    1               1            
+        VTH0     .4979          -.6915       
+          K3   -1.136          11.03         
+          W0  267.300000E-09  100.000000E-12 
+         NLX  188.800000E-09  177.000000E-09 
+        DVT0   50               1.65         
+        DVT1    1.039            .3868       
+          UA    4.705000E-12  539.400000E-12 
+          UB    2.137000E-18    1.053000E-18 
+          UC   10.000000E-21   10.000000E-21 
+        VSAT  133.800000E+03  115.800000E+03 
+        RDSW  344.9             1.033000E+03 
+        VOFF    -.08925         -.117        
+     NFACTOR     .4136          1.214        
+        CDSC    0               2.589000E-03 
+        PCLM     .6948          3.184        
+      PDIBL1     .3571        100.000000E-06 
+      PDIBL2    2.065000E-03   10.000000E-21 
+       DROUT     .5              .5          
+      PSCBE1  351.800000E+06    5.000000E+09 
+      PSCBE2   74.910000E-06  100.000000E-06 
+          A0    2.541            .585        
+          A1    0               0            
+          A2    1               1            
+       NPEAK  261.100000E+15   92.400000E+15 
+         LDD    0               0            
+        LITL   82.568160E-09   83.538020E-09 
+         KT1    -.3302          -.5403       
+         UA1    0               0            
+         UB1    0               0            
+         UC1    0               0            
+        KETA     .02032         -.0144       
+        ETA0     .01415          .248        
+        ETAB    -.1221         -3.917000E-03 
+         K3B    -.4399          -.758        
+        DVT2   -8.375000E-03     .01659      
+       CDSCB    1.500000E-03  294.300000E-06 
+         CIT  444.100000E-06                 
+        DSUB     .5              .5          
+         UTE   -1.8            -1.3          
+      MOBMOD    1               1            
+      NOIMOD    3               3            
+       CDSCD    1.000000E-03  437.000000E-06 
+         AGS     .2408           .2468       
+       DVT0W     .1089           .1879       
+       DVT1W   66.710000E+03   73.350000E+03 
+       DVT2W    -.01352        -6.312000E-03 
+        PRWG    0                .1477       
+        PRWB    -.2416          -.09731      
+     PDIBLCB     .3222          1            
+          B0    4.301000E-09   88.320000E-09 
+        CGSL  131.000000E-12  108.000000E-12 
+        CGDL  131.000000E-12  108.000000E-12 
+         CLC    1.000000E-15    1.000000E-15 
+        LINT  -50.050000E-09  -71.300000E-09 
+        WINT   94.030000E-09   34.490000E-09 
+          WW  -12.970000E-15  189.400000E-18 
+         WWN                    1.04         
+         WWL   -9.411000E-21   -1.981000E-21 
+         DLC   30.000000E-09   24.500000E-09 
+         DWC   94.030000E-09   34.490000E-09 
+          CF    0               0            
+        NOIA   17.300000E+18    1.520000E+18 
+        NOIB   70.000000E+03    7.750000E+03 
+        NOIC -564.000000E-15  500.000000E-15 
+         VTM     .025864         .025864     
+     VERSION    3.1             3.1          
+       PBSWG     .69            1.02         
+       MJSWG     .23             .43         
+       CJSWG  250.000000E-12  320.000000E-12 
+       JTSCD   10.000000E-06   90.000000E-06 
+
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model MODN: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M1, model MODN: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model MODP: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M2, model MODP: Ps = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Ps = 0 is less than W
+
+**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00291)    3.3000 (N00317) 33.56E-09 (N00321)    3.0863 (N00626)    1.0000     
+
+(N00754)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.497E-06
+    V_V2         0.000E+00
+    V_V3         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.81E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .14
+
