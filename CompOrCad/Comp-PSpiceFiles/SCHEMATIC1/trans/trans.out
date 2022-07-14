@@ -1,7 +1,7 @@
+
+**** 07/12/22 16:20:21 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
-**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
-
- ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\victo\Desktop\TopEspCirc\CompOrCad\comp-pspicefiles\schematic1\trans.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -32,14 +32,14 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source COMP
-M_M1         N00317 N00321 0 0 MODN W=0.4u L=1u M=1
-M_M2         N00291 N00321 N00317 N00291 MODP W=1.2u L=1u M=1
-M_M4         N00291 N00754 N00321 N00291 MODP W=0.4u L=1u M=1
-M_M3         N00321 N00626 0 0 MODN W=0.4u L=1u M=1
+M_M1         N00317 N00321 0 0 MODN W=1u L=1u M=1
+M_M2         N00291 N00321 N00317 N00291 MODP W=3u L=1u M=1
+M_M4         N00291 N00754 N00321 N00291 MODP W=1u L=1u M=1
+M_M3         N00321 N00626 0 0 MODN W=5u L=1u M=1
 V_V1         N00291 0 3.3
 V_V2         N00626 0 1
 V_V3         N00754 0  AC 1
-+SIN 0 3.3 10 0 0 0
++SIN 1.65 1.65 10 0 0 0
 
 **** RESUMING trans.cir ****
 .END
@@ -64,9 +64,9 @@ INFO(ORPSIM-15454): Model MODN: Using BSIM VERSION 3.1 or lower
 
 INFO(ORPSIM-15454): Model MODP: Using BSIM VERSION 3.1 or lower
 
-**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 07/12/22 16:20:21 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\victo\Desktop\TopEspCirc\CompOrCad\comp-pspicefiles\schematic1\trans.sim ] 
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -187,6 +187,10 @@ WARNING(ORPSIM-15235): Mosfet M_M1, model MODN: Pd = 0 is less than W
 
 WARNING(ORPSIM-15235): Mosfet M_M1, model MODN: Ps = 0 is less than W
 
+WARNING(ORPSIM-15235): Mosfet M_M3, model MODN: Pd = 0 is less than W
+
+WARNING(ORPSIM-15235): Mosfet M_M3, model MODN: Ps = 0 is less than W
+
 WARNING(ORPSIM-15235): Mosfet M_M2, model MODP: Pd = 0 is less than W
 
 WARNING(ORPSIM-15235): Mosfet M_M2, model MODP: Ps = 0 is less than W
@@ -195,9 +199,9 @@ WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Pd = 0 is less than W
 
 WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Ps = 0 is less than W
 
-**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 07/12/22 16:20:21 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\victo\Desktop\TopEspCirc\CompOrCad\comp-pspicefiles\schematic1\trans.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -210,9 +214,9 @@ WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Ps = 0 is less than W
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00291)    3.3000 (N00317) 33.56E-09 (N00321)    3.0863 (N00626)    1.0000     
+(N00291)    3.3000 (N00317)    3.3000 (N00321)     .0444 (N00626)    1.0000     
 
-(N00754)    0.0000 
+(N00754)    1.6500 
 
 
 
@@ -220,19 +224,19 @@ WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Ps = 0 is less than W
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -5.497E-06
+    V_V1        -1.559E-05
     V_V2         0.000E+00
     V_V3         0.000E+00
 
-    TOTAL POWER DISSIPATION   1.81E-05  WATTS
+    TOTAL POWER DISSIPATION   5.14E-05  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 07/10/22 09:41:26 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 07/12/22 16:20:21 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-trans"  [ E:\ONEDRIVE - POLI.UFRJ.BR\MESTRADO\TOPESPCIRC\CompOrCad\Comp-PSpiceFiles\SCHEMATIC1\trans.sim ] 
+ ** Profile: "SCHEMATIC1-trans"  [ C:\Users\victo\Desktop\TopEspCirc\CompOrCad\comp-pspicefiles\schematic1\trans.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -242,5 +246,5 @@ WARNING(ORPSIM-15235): Mosfet M_M4, model MODP: Ps = 0 is less than W
 
 
 
-  Total job time (using Solver 1)   =         .14
+  Total job time (using Solver 1)   =         .02
 
