@@ -1,0 +1,72 @@
+\# Program start time:     UTC 2022.07.19 19:50:10.042
+\# Local time: UTC (UTC+00:00) 2022.07.19 16:50:10.042
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 04/29/2020 00:19 (cpgbld01) $
+\o Hierarchy:		/usr/local/Opus/user/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.11  (64-bit addresses)
+\# Command line:	/cds/Opus/user/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -ocean -restore ./OceanScripts/population.ocn
+\# Host name (type):	estinge11 (x86_64)
+\# Operating system:	Linux 4.4.157 #2 SMP Fri Sep 21 00:36:59 CDT 2018
+\# Linux /etc/issue:	Welcome to \s \r (\l)
+\# X display name (WxH):	localhost:10.0 (5280x1080)
+\# Available geometry:			TL(1440:0) BR(3999:1035)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12101004)
+\# X resource pool:	base 0x4400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        544 MB
+\# Available memory:	     94,876 MB
+\# System memory:	     97,623 MB
+\# Maximum memory size:	     97,350 MB
+\# Max mem available:	     95,148 MB
+\# Initial memory used:	        272 MB
+\#        process size:	      1,483 MB
+\# Thread usage limits (effective/default):	maxthreads 128334/128334 maxload 8.00/8.00
+\# Qt version:		5.9.1
+\# Window Manager:	kde
+\# User Name:		raposo
+\o Working Directory:	estinge11:/home/netware/users/raposo/Mestrado/TopEspCirc/Cadence_comp
+\# Process Id:		3544
+\o 
+\o COPYRIGHT (C) 1992-2020  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2020  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o INFO (DB-120008): oaSocket connection timeout value was set to 5 seconds.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\# Memory report: using         379 MB, process size 1,689 MB at UTC 2022.07.19 19:50:18.045
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\# Available memory:         94,815 MB at UTC 2022.07.19 19:50:20.112
+\# Memory report: Maximum memory size now 95,205 MB at UTC 2022.07.19 19:50:20.112
+\# Thread usage report: 11 active threads, active load 1.00 at UTC 2022.07.19 19:50:20.112
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading ams.cxt 
+\o Loading adexlDM.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.06s.
+\# Memory report: using         482 MB, process size 1,868 MB at UTC 2022.07.19 19:50:28.487
+\# Memory report: using         606 MB, process size 1,968 MB at UTC 2022.07.19 19:50:39.124
+\# Thread usage report: 9 active threads, active load 1.00 at UTC 2022.07.19 19:50:43.231
+\# Memory report: on exit            645 MB, process size 2,024 MB at UTC 2022.07.19 19:50:50.546
+\# Memory report: peak usage         645 MB, process size 2,024 MB
