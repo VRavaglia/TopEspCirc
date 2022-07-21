@@ -27,11 +27,11 @@ modelFile(
 )
 
 analysis('tran ?stop "0.3"  )
-desVar( "Ln" 320n )
-desVar( "Lp" 180n )
-desVar( "Wn" 240n )
-desVar( "Wp" 720n )
-desVar( "Vbias" 1 )
+desVar( "Ln" 3600.0n )
+desVar( "Lp" 1400.0n )
+desVar( "Wn" 2450.0n )
+desVar( "Wp" 1800.0n )
+desVar( "Vbias" 1.0 )
 envOption(
 	'analysisOrder  list("tran") 
 )
